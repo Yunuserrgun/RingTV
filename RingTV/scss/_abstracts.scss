@@ -1,0 +1,36 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kameron:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$header-font:"Bebas Neue", sans-serif;
+$title-font:"Kameron", serif;
+$subtitle-font: "Open Sans", sans-serif;
+$date-font:"PT Sans", sans-serif;
+$dark-color: #14151A;
+$light-color: #FEFEFE;
+$red-color: #d9222a;
+$yellow-color: #b89f14;
+$gray-color:#e8e8e8;
+
+
+$general-transition: all .5s;
+
+
+@mixin media($screensize){
+    @if ($screensize == xlarge){
+        @media(max-width: 1280px){ @content };
+    }
+    @if ($screensize == large){
+        @media(max-width: 992px){ @content };
+    }
+    @if ($screensize == medium){
+        @media(max-width: 768px){ @content };
+    }
+    @if ($screensize == small){
+        @media(max-width: 650px){ @content };
+    }
+    @if ($screensize == xsmall){
+        @media(max-width: 576px){ @content };
+    }
+
+
+}

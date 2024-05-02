@@ -1,0 +1,41 @@
+.btn{
+    color: $yellow-color;
+    background-color: $light-color;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    margin: 0 .5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    transition: all .5s;
+    @include media(large){
+        font-size: 1rem;
+        padding: .8rem 1.2rem;
+    }
+    @include media(medium){
+        font-size: .8rem;
+        padding: .7rem 1.1rem;
+    }
+    @include media(small){
+        font-size: .7rem;
+        padding: .6rem .9rem;
+    }
+    @include media(xsmall){
+        font-size: .5rem;
+        padding: .4rem .6rem;
+    }
+    &:hover {
+        background-color: $yellow-color;
+        color: $light-color;
+    }
+    &-yellow{
+        background-color: $yellow-color;
+        color: $light-color;
+        &:hover{
+            background-color: $light-color;
+            color: $yellow-color;
+        }
+    }
+}
